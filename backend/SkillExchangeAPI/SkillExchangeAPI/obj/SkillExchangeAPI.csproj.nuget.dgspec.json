@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\bobcheng\\Desktop\\Skillbanks\\backend\\SkillExchangeAPI\\SkillExchangeAPI\\SkillExchangeAPI.csproj": {}
+    "C:\\Users\\bobcheng\\Source\\Repos\\Skillbanks\\backend\\SkillExchangeAPI\\SkillExchangeAPI\\SkillExchangeAPI.csproj": {}
   },
   "projects": {
-    "C:\\Users\\bobcheng\\Desktop\\Skillbanks\\backend\\SkillExchangeAPI\\SkillExchangeAPI\\SkillExchangeAPI.csproj": {
+    "C:\\Users\\bobcheng\\Source\\Repos\\Skillbanks\\backend\\SkillExchangeAPI\\SkillExchangeAPI\\SkillExchangeAPI.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\bobcheng\\Desktop\\Skillbanks\\backend\\SkillExchangeAPI\\SkillExchangeAPI\\SkillExchangeAPI.csproj",
+        "projectUniqueName": "C:\\Users\\bobcheng\\Source\\Repos\\Skillbanks\\backend\\SkillExchangeAPI\\SkillExchangeAPI\\SkillExchangeAPI.csproj",
         "projectName": "SkillExchangeAPI",
-        "projectPath": "C:\\Users\\bobcheng\\Desktop\\Skillbanks\\backend\\SkillExchangeAPI\\SkillExchangeAPI\\SkillExchangeAPI.csproj",
+        "projectPath": "C:\\Users\\bobcheng\\Source\\Repos\\Skillbanks\\backend\\SkillExchangeAPI\\SkillExchangeAPI\\SkillExchangeAPI.csproj",
         "packagesPath": "C:\\Users\\bobcheng\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\bobcheng\\Desktop\\Skillbanks\\backend\\SkillExchangeAPI\\SkillExchangeAPI\\obj\\",
+        "outputPath": "C:\\Users\\bobcheng\\Source\\Repos\\Skillbanks\\backend\\SkillExchangeAPI\\SkillExchangeAPI\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
@@ -45,7 +45,7 @@
           "auditLevel": "low",
           "auditMode": "direct"
         },
-        "SdkAnalysisLevel": "9.0.100"
+        "SdkAnalysisLevel": "9.0.300"
       },
       "frameworks": {
         "net8.0": {
@@ -87,7 +87,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.102/PortableRuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.302/PortableRuntimeIdentifierGraph.json"
         }
       }
     }
