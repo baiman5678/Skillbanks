@@ -20,6 +20,7 @@ namespace SkillExchangeAPI
 
             builder.Services.AddEndpointsApiExplorer();
             builder.Services.AddSwaggerGen();
+            builder.Services.AddScoped<Services.PassWordService>(); 
 
             var app = builder.Build();
 

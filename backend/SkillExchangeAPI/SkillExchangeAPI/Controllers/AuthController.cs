@@ -4,6 +4,7 @@ using Microsoft.EntityFrameworkCore;
 using SkillExchangeAPI.Data;
 using SkillExchangeAPI.Models;
 using SkillExchangeAPI.DTOs;
+using SkillExchangeAPI.Services;
 namespace SkillExchangeAPI.Controllers
 {
     [Route("api/[controller]")]
@@ -12,10 +13,12 @@ namespace SkillExchangeAPI.Controllers
     {
         private readonly ILogger<AuthController> _logger;
         private readonly ApplicationDbContext _context;
-        public AuthController(ILogger<AuthController> logger ,ApplicationDbContext context)
+        private readonly PassWordService _passWordService;
+        public AuthController(ILogger<AuthController> logger ,ApplicationDbContext context,PassWordService passWord)
         {
             _logger = logger;
             _context = context;
+            _passWordService = passWord;
         }
         [HttpPost("Register")]
         public IActionResult Register(RegisterDTO registrate)
@@ -30,7 +33,7 @@ namespace SkillExchangeAPI.Controllers
                 var existingUser = _context.Users.Where(u => u.Email == registrate.Email).Select(u=>u.Email).FirstOrDefault();
                 if (existingUser != null)
                 {
-                    return Conflict("Email already exists.");
+                    return Ok("Email already exists.");
                 }
                 //先確認資料行
                 int nowid = _context.Users.Any() ? _context.Users.Max(u => u.Id) + 1 : 1; // Get the next ID
@@ -39,7 +42,7 @@ namespace SkillExchangeAPI.Controllers
                 {
                     Id = nowid,
                     Email = registrate.Email,
-                    PasswordHash = BCrypt.Net.BCrypt.HashPassword(registrate.Password),// Hash the password
+                    PasswordHash = _passWordService.HashPassword(registrate.Password),// Hash the password
                     CreateAt = DateTime.UtcNow,
                 };
                 _context.Users.Add(newUser);
@@ -52,9 +55,36 @@ namespace SkillExchangeAPI.Controllers
                 return StatusCode(StatusCodes.Status500InternalServerError, "An error occurred while processing your request.");
             }
         }
+        [HttpPost("Login")]
+        public IActionResult Login(LoginDTO login)
+        {
+            try
+            {
+                if (login == null || string.IsNullOrEmpty(login.Email) || string.IsNullOrEmpty(login.Password))
+                {
+                    return BadRequest("Invalid login data.");
+                }
+                var user = _context.Users.Where(u=> u.Email == login.Email).FirstOrDefault();
+                var passwordHash = user.PasswordHash;
+                if (user == null)
+                {
+                    return Unauthorized("Invalid email or password.");
+                }
+                // Verify the password
+                if (!_passWordService.VerifyPassword(login.Password, passwordHash))
+                {
+                    return Unauthorized("Invalid email or password.");
+                }
+                // Here you would typically generate a JWT token or session for the user
+                return Ok("Login successful.");
+            }
+            catch (Exception ex)
+            {
+                _logger.LogError(ex, "An error occurred during login.");
+                return StatusCode(StatusCodes.Status500InternalServerError, "An error occurred while processing your request.");
+            }
+        }
 
-        
-        
 
 
 
