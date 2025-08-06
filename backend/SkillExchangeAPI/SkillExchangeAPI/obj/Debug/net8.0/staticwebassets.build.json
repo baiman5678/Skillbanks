@@ -1,12 +1,1 @@
-{
-  "Version": 1,
-  "Hash": "YwzqxOPcI+RSe0yfHGLFKaAyXo6KUrcYhuNE0+2qzOI=",
-  "Source": "SkillExchangeAPI",
-  "BasePath": "_content/SkillExchangeAPI",
-  "Mode": "Default",
-  "ManifestType": "Build",
-  "ReferencedProjectsConfiguration": [],
-  "DiscoveryPatterns": [],
-  "Assets": [],
-  "Endpoints": []
-}
+{"Version":1,"Hash":"YwzqxOPcI+RSe0yfHGLFKaAyXo6KUrcYhuNE0+2qzOI=","Source":"SkillExchangeAPI","BasePath":"_content/SkillExchangeAPI","Mode":"Default","ManifestType":"Build","ReferencedProjectsConfiguration":[],"DiscoveryPatterns":[],"Assets":[],"Endpoints":[]}

@@ -35,13 +35,14 @@ namespace SkillExchangeAPI.Controllers
                 {
                     return Ok("Email already exists.");
                 }
-                //先確認資料行
+
                 int nowid = _context.Users.Any() ? _context.Users.Max(u => u.Id) + 1 : 1; // Get the next ID
-                // Create a new user
+
                 var newUser = new UserModel
                 {
                     Id = nowid,
                     Email = registrate.Email,
+                    SkillPoints = 0, 
                     PasswordHash = _passWordService.HashPassword(registrate.Password),// Hash the password
                     CreateAt = DateTime.UtcNow,
                 };
@@ -70,12 +71,12 @@ namespace SkillExchangeAPI.Controllers
                 {
                     return Unauthorized("Invalid email or password.");
                 }
-                // Verify the password
+
                 if (!_passWordService.VerifyPassword(login.Password, passwordHash))
                 {
                     return Unauthorized("Invalid email or password.");
                 }
-                // Here you would typically generate a JWT token or session for the user
+
                 return Ok("Login successful.");
             }
             catch (Exception ex)
