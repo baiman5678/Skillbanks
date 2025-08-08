@@ -78,6 +78,20 @@ namespace SkillExchangeAPI.Controllers
             return Ok("Skill exchange modified successfully.");
         }
 
+        [HttpPut("BTExchange")]//BEING TEACHER
+        public IActionResult BTExchange(int id,int TeacherID)
+        {
+            var exchange = _context.SkillExchanges.FirstOrDefault(s => s.ID == id);
+            if (exchange == null)
+            {
+                return NotFound("Skill exchange not found.");
+            }
+            exchange.TeacherId = TeacherID;
+            exchange.Status = "媒合成功";
+            exchange.UpdateAt = DateTime.UtcNow;
+            _context.SaveChanges();
+            return Ok("Skill exchange status updated to '媒合成功'.");
+        }
 
     }
 }

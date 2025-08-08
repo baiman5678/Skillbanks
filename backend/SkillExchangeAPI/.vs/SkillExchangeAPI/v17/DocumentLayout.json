@@ -3,6 +3,10 @@
   "WorkspaceRootPath": "C:\\Users\\bobcheng\\source\\repos\\Skillbanks\\backend\\SkillExchangeAPI\\",
   "Documents": [
     {
+      "AbsoluteMoniker": "D:0:0:{85EAD7A6-727E-40C2-B95E-4818943D1CF8}|SkillExchangeAPI\\SkillExchangeAPI.csproj|c:\\users\\bobcheng\\source\\repos\\skillbanks\\backend\\skillexchangeapi\\skillexchangeapi\\controllers\\usercontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{85EAD7A6-727E-40C2-B95E-4818943D1CF8}|SkillExchangeAPI\\SkillExchangeAPI.csproj|solutionrelative:skillexchangeapi\\controllers\\usercontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{85EAD7A6-727E-40C2-B95E-4818943D1CF8}|SkillExchangeAPI\\SkillExchangeAPI.csproj|c:\\users\\bobcheng\\source\\repos\\skillbanks\\backend\\skillexchangeapi\\skillexchangeapi\\controllers\\skillexchangecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{85EAD7A6-727E-40C2-B95E-4818943D1CF8}|SkillExchangeAPI\\SkillExchangeAPI.csproj|solutionrelative:skillexchangeapi\\controllers\\skillexchangecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
@@ -25,10 +29,6 @@
     {
       "AbsoluteMoniker": "D:0:0:{85EAD7A6-727E-40C2-B95E-4818943D1CF8}|SkillExchangeAPI\\SkillExchangeAPI.csproj|c:\\users\\bobcheng\\source\\repos\\skillbanks\\backend\\skillexchangeapi\\skillexchangeapi\\dtos\\registerdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{85EAD7A6-727E-40C2-B95E-4818943D1CF8}|SkillExchangeAPI\\SkillExchangeAPI.csproj|solutionrelative:skillexchangeapi\\dtos\\registerdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{85EAD7A6-727E-40C2-B95E-4818943D1CF8}|SkillExchangeAPI\\SkillExchangeAPI.csproj|c:\\users\\bobcheng\\source\\repos\\skillbanks\\backend\\skillexchangeapi\\skillexchangeapi\\controllers\\usercontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{85EAD7A6-727E-40C2-B95E-4818943D1CF8}|SkillExchangeAPI\\SkillExchangeAPI.csproj|solutionrelative:skillexchangeapi\\controllers\\usercontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{85EAD7A6-727E-40C2-B95E-4818943D1CF8}|SkillExchangeAPI\\SkillExchangeAPI.csproj|c:\\users\\bobcheng\\source\\repos\\skillbanks\\backend\\skillexchangeapi\\skillexchangeapi\\controllers\\authcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -70,7 +70,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 4,
+          "SelectedChildIndex": 6,
           "Children": [
             {
               "$type": "Bookmark",
@@ -86,7 +86,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 3,
               "Title": "ModifyExchangeDTO.cs",
               "DocumentMoniker": "C:\\Users\\bobcheng\\source\\repos\\Skillbanks\\backend\\SkillExchangeAPI\\SkillExchangeAPI\\DTOs\\ModifyExchangeDTO.cs",
               "RelativeDocumentMoniker": "SkillExchangeAPI\\DTOs\\ModifyExchangeDTO.cs",
@@ -99,20 +99,20 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 1,
               "Title": "SkillexchangeController.cs",
               "DocumentMoniker": "C:\\Users\\bobcheng\\source\\repos\\Skillbanks\\backend\\SkillExchangeAPI\\SkillExchangeAPI\\Controllers\\SkillexchangeController.cs",
               "RelativeDocumentMoniker": "SkillExchangeAPI\\Controllers\\SkillexchangeController.cs",
               "ToolTip": "C:\\Users\\bobcheng\\source\\repos\\Skillbanks\\backend\\SkillExchangeAPI\\SkillExchangeAPI\\Controllers\\SkillexchangeController.cs",
               "RelativeToolTip": "SkillExchangeAPI\\Controllers\\SkillexchangeController.cs",
-              "ViewState": "AgIAAC8AAAAAAAAAAAAQwBQAAAAhAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAADcAAAAtAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-08-05T05:56:27.4Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 5,
               "Title": "SkillExchangeModel.cs",
               "DocumentMoniker": "C:\\Users\\bobcheng\\source\\repos\\Skillbanks\\backend\\SkillExchangeAPI\\SkillExchangeAPI\\Models\\SkillExchangeModel.cs",
               "RelativeDocumentMoniker": "SkillExchangeAPI\\Models\\SkillExchangeModel.cs",
@@ -125,20 +125,20 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 6,
+              "DocumentIndex": 0,
               "Title": "UserController.cs",
               "DocumentMoniker": "C:\\Users\\bobcheng\\source\\repos\\Skillbanks\\backend\\SkillExchangeAPI\\SkillExchangeAPI\\Controllers\\UserController.cs",
               "RelativeDocumentMoniker": "SkillExchangeAPI\\Controllers\\UserController.cs",
               "ToolTip": "C:\\Users\\bobcheng\\source\\repos\\Skillbanks\\backend\\SkillExchangeAPI\\SkillExchangeAPI\\Controllers\\UserController.cs",
               "RelativeToolTip": "SkillExchangeAPI\\Controllers\\UserController.cs",
-              "ViewState": "AgIAACEAAAAAAAAAAAAIwBUAAAAJAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAD4AAAANAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-08-05T01:13:01.926Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 4,
               "Title": "SkillExchangeDTO.cs",
               "DocumentMoniker": "C:\\Users\\bobcheng\\source\\repos\\Skillbanks\\backend\\SkillExchangeAPI\\SkillExchangeAPI\\DTOs\\SkillExchangeDTO.cs",
               "RelativeDocumentMoniker": "SkillExchangeAPI\\DTOs\\SkillExchangeDTO.cs",
@@ -151,7 +151,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 2,
               "Title": "ApplicationDbContext.cs",
               "DocumentMoniker": "C:\\Users\\bobcheng\\source\\repos\\Skillbanks\\backend\\SkillExchangeAPI\\SkillExchangeAPI\\Data\\ApplicationDbContext.cs",
               "RelativeDocumentMoniker": "SkillExchangeAPI\\Data\\ApplicationDbContext.cs",
@@ -164,7 +164,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 5,
+              "DocumentIndex": 6,
               "Title": "RegisterDTO.cs",
               "DocumentMoniker": "C:\\Users\\bobcheng\\source\\repos\\Skillbanks\\backend\\SkillExchangeAPI\\SkillExchangeAPI\\DTOs\\RegisterDTO.cs",
               "RelativeDocumentMoniker": "SkillExchangeAPI\\DTOs\\RegisterDTO.cs",

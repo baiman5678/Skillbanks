@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("SkillExchangeAPI")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+c88ecaa7033f56aa1f4a4cb5665ac73b01ef9aec")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+87f11c524e4789a8fdcef6525b36147132d420de")]
 [assembly: System.Reflection.AssemblyProductAttribute("SkillExchangeAPI")]
 [assembly: System.Reflection.AssemblyTitleAttribute("SkillExchangeAPI")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
